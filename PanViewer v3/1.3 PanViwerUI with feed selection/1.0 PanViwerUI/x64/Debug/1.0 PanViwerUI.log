@@ -1,0 +1,125 @@
+﻿Build started 10/11/2017 4:24:23 PM.
+     1>Project "D:\Projects\Smart Pan Viewer\SmartPanViewer\Pan Viewer Final\1.3 PanViwerUI with feed selection\1.0 PanViwerUI\1.0 PanViwerUI.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\install\include /IC:\opencv\build\install\include\opencv /IC:\opencv\build\install\include\opencv2 /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.Xml.dll" /errorReport:prompt /clr:nostdlib CoreProgram.cpp MainWindow.cpp CalibrateWindow.cpp MapWindow.cpp
+         CoreProgram.cpp
+         MainWindow.cpp
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(538): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(539): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(582): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(583): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(625): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(626): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\MapWindow.h(213): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\MapWindow.h(214): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\MainWindow.h(489): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\MainWindow.h(490): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+         CalibrateWindow.cpp
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(538): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(539): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(582): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(583): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(625): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\CalibarateWindow.h(626): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+         MapWindow.cpp
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\MapWindow.h(213): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+     1>d:\projects\smart pan viewer\smartpanviewer\pan viewer final\1.3 panviwerui with feed selection\1.0 panviwerui\MapWindow.h(214): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+         Generating Code...
+     1>c:\opencv\build\install\include\opencv2\core\cvstd.hpp(575): warning C4793: 'cv::String::String': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cuda.inl.hpp(105): warning C4793: 'cv::cuda::GpuMat::GpuMat': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cuda.inl.hpp(395): warning C4793: 'cv::cuda::HostMem::HostMem': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(482): warning C4793: 'cv::Mat::Mat': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(803): warning C4793: 'cv::Mat::release': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(2083): warning C4793: 'cv::SparseMat::addref': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(3683): warning C4793: 'cv::UMat::addref': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\ptr.inl.hpp(67): warning C4793: 'cv::detail::PtrOwner::incRef': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\ptr.inl.hpp(72): warning C4793: 'cv::detail::PtrOwner::decRef': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cvstd.hpp(656): warning C4793: 'cv::String::operator=': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cvstd.hpp(575): warning C4793: 'cv::String::String': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cuda.inl.hpp(105): warning C4793: 'cv::cuda::GpuMat::GpuMat': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cuda.inl.hpp(395): warning C4793: 'cv::cuda::HostMem::HostMem': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(482): warning C4793: 'cv::Mat::Mat': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(803): warning C4793: 'cv::Mat::release': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(2083): warning C4793: 'cv::SparseMat::addref': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(3683): warning C4793: 'cv::UMat::addref': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\ptr.inl.hpp(67): warning C4793: 'cv::detail::PtrOwner::incRef': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\ptr.inl.hpp(72): warning C4793: 'cv::detail::PtrOwner::decRef': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cvstd.hpp(656): warning C4793: 'cv::String::operator=': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cvstd.hpp(575): warning C4793: 'cv::String::String': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cuda.inl.hpp(105): warning C4793: 'cv::cuda::GpuMat::GpuMat': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cuda.inl.hpp(395): warning C4793: 'cv::cuda::HostMem::HostMem': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(482): warning C4793: 'cv::Mat::Mat': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(803): warning C4793: 'cv::Mat::release': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(2083): warning C4793: 'cv::SparseMat::addref': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(3683): warning C4793: 'cv::UMat::addref': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\ptr.inl.hpp(67): warning C4793: 'cv::detail::PtrOwner::incRef': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\ptr.inl.hpp(72): warning C4793: 'cv::detail::PtrOwner::decRef': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cvstd.hpp(656): warning C4793: 'cv::String::operator=': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cvstd.hpp(575): warning C4793: 'cv::String::String': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cuda.inl.hpp(105): warning C4793: 'cv::cuda::GpuMat::GpuMat': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cuda.inl.hpp(395): warning C4793: 'cv::cuda::HostMem::HostMem': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(482): warning C4793: 'cv::Mat::Mat': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(803): warning C4793: 'cv::Mat::release': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(2083): warning C4793: 'cv::SparseMat::addref': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\mat.inl.hpp(3683): warning C4793: 'cv::UMat::addref': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\ptr.inl.hpp(67): warning C4793: 'cv::detail::PtrOwner::incRef': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\ptr.inl.hpp(72): warning C4793: 'cv::detail::PtrOwner::decRef': function compiled as native:
+         	Found an intrinsic not supported in managed code
+     1>c:\opencv\build\install\include\opencv2\core\cvstd.hpp(656): warning C4793: 'cv::String::operator=': function compiled as native:
+         	Found an intrinsic not supported in managed code
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\install\include /IC:\opencv\build\install\include\opencv /IC:\opencv\build\install\include\opencv2 /Zi /clr /nologo /W3 /WX- /Od /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fp"x64\Debug\1.0 PanViwerUI.pch" /Fa"x64\Debug\\" /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /errorReport:prompt "C:\Users\Kalana\AppData\Local\Temp\.NETFramework,Version=v4.5.2.AssemblyAttributes.cpp"
+         .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Projects\Smart Pan Viewer\SmartPanViewer\Pan Viewer Final\1.3 PanViwerUI with feed selection\x64\Debug\1.0 PanViwerUI.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\opencv\build\install\x64\vc14\lib opencv_aruco330d.lib opencv_bgsegm330d.lib opencv_bioinspired330d.lib opencv_calib3d330d.lib opencv_ccalib330d.lib opencv_core330d.lib opencv_datasets330d.lib opencv_dnn330d.lib opencv_dpm330d.lib opencv_face330d.lib opencv_features2d330d.lib opencv_flann330d.lib opencv_fuzzy330d.lib opencv_highgui330d.lib opencv_img_hash330d.lib opencv_imgcodecs330d.lib opencv_imgproc330d.lib opencv_line_descriptor330d.lib opencv_ml330d.lib opencv_objdetect330d.lib opencv_optflow330d.lib opencv_phase_unwrapping330d.lib opencv_photo330d.lib opencv_plot330d.lib opencv_reg330d.lib opencv_rgbd330d.lib opencv_saliency330d.lib opencv_shape330d.lib opencv_stereo330d.lib opencv_stitching330d.lib opencv_structured_light330d.lib opencv_superres330d.lib opencv_surface_matching330d.lib opencv_text330d.lib opencv_tracking330d.lib opencv_video330d.lib opencv_videoio330d.lib opencv_videostab330d.lib opencv_xfeatures2d330d.lib opencv_ximgproc330d.lib opencv_xobjdetect330d.lib opencv_xphoto330d.lib opencv_cudaarithm330d.lib opencv_cudabgsegm330d.lib opencv_cudacodec330d.lib opencv_cudafeatures2d330d.lib opencv_cudafilters330d.lib opencv_cudaimgproc330d.lib opencv_cudalegacy330d.lib opencv_cudaobjdetect330.lib opencv_cudaoptflow330d.lib opencv_cudastereo330d.lib opencv_cudawarping330d.lib opencv_cudev330d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /ASSEMBLYRESOURCE:x64\Debug\My10PanViwerUI.CalibarateWindow.resources /ASSEMBLYRESOURCE:x64\Debug\My10PanViwerUI.MainWindow.resources /ASSEMBLYRESOURCE:x64\Debug\My10PanViwerUI.MapWindow.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\Projects\Smart Pan Viewer\SmartPanViewer\Pan Viewer Final\1.3 PanViwerUI with feed selection\x64\Debug\1.0 PanViwerUI.pdb" /ASSEMBLYDEBUG /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X64 x64\Debug\CoreProgram.obj
+         x64\Debug\MainWindow.obj
+         x64\Debug\CalibrateWindow.obj
+         x64\Debug\MapWindow.obj
+         "x64\Debug\.NETFramework,Version=v4.5.2.AssemblyAttributes.obj"
+     1>MapWindow.obj : warning LNK4248: unresolved typeref token (0100001C) for 'CvCapture'; image may not run
+     1>MainWindow.obj : warning LNK4248: unresolved typeref token (01000021) for 'CvCapture'; image may not run
+     1>MapWindow.obj : warning LNK4248: unresolved typeref token (0100001D) for 'cv.IVideoCapture'; image may not run
+     1>MainWindow.obj : warning LNK4248: unresolved typeref token (01000022) for 'cv.IVideoCapture'; image may not run
+         1.0 PanViwerUI.vcxproj -> D:\Projects\Smart Pan Viewer\SmartPanViewer\Pan Viewer Final\1.3 PanViwerUI with feed selection\x64\Debug\1.0 PanViwerUI.exe
+     1>Done Building Project "D:\Projects\Smart Pan Viewer\SmartPanViewer\Pan Viewer Final\1.3 PanViwerUI with feed selection\1.0 PanViwerUI\1.0 PanViwerUI.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:17.08

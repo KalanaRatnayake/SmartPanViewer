@@ -1,0 +1,51 @@
+#pragma once
+#include <opencv2/opencv.hpp>
+#include <iostream>
+#include <thread>
+#include <stdio.h>
+#include <windows.h>
+
+using namespace cv;
+using namespace std;
+
+void viewCamera(int cameraID, string windowName) {
+	VideoCapture cap(cameraID);
+	cap.set(CV_CAP_PROP_FRAME_WIDTH, 800);
+	cap.set(CV_CAP_PROP_FRAME_HEIGHT, 600);
+	Mat frame;
+
+	while (true)
+	{
+		if (cap.read(frame)) {
+			cout << frame.cols << endl;
+			cout << frame.rows << endl;
+
+			cv::imshow(windowName, frame);
+
+			int c = waitKey(40);
+
+			if (c == char('q')) {
+				break;
+			}
+		}
+		else {
+			break;
+		}
+	}
+	cap.release();
+}
+
+int startStream() {
+	thread cam1(viewCamera, 0, "Camera 1");
+	Sleep(500);
+	thread cam2(viewCamera, 1, "Camera 2");
+	Sleep(500);
+	thread cam3(viewCamera, 2, "Camera 3");
+	Sleep(500);
+
+	cam1.join();
+	cam2.join();
+	cam3.join();
+
+	return 0;
+}
