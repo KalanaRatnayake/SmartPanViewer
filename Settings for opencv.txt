@@ -4,10 +4,16 @@ You can add a path by clicking on Folder icon left to Red Cross Icon. You have t
 C:\opencv\build\install\include 
 C:\opencv\build\install\include\opencv 
 C:\opencv\build\install\include\opencv2
+C:\Program Files\boost\boost_1_66_0\boost
 
 2. Now we will add path to library directories. 
 Click on Linker in left panel, then Additional Library Directories.
-You have to add path C:\opencv\build\install\x64\vc14\lib here.
+You have to add path 
+
+C:\opencv\build\install\x64\vc14\lib
+C:\Program Files\boost\boost_1_66_0\lib64-msvc-14.0 
+
+here.
 
 3. Now within Linker click on Input. 
 Here we will mention which libraries we are going to use. 
