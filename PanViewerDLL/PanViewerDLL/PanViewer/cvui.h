@@ -58,80 +58,125 @@ void init(const cv::String& theWindowName, int theDelayWaitKey = -1, bool theCre
 void init(const cv::String theWindowNames[], size_t theHowManyWindows, int theDelayWaitKey = -1, bool theCreateNamedWindows = true);
 
 /**
- Track UI interactions of a particular window. This function must be invoked
- for any window that will receive cvui components. cvui automatically calls `cvui::watch()`
- for any window informed in `cvui::init()`, so generally you don't have to watch them
- yourself. If you initialized cvui and told it *not* to create windows automatically,
- you need to call `cvui::watch()` on those windows yourself. `cvui::watch()` can
- automatically create a window before watching it, if it does not exist.
+Initializes cvui. You must provide the name of the window where
+components will be added. It is also possible to tell cvui to handle
+OpenCV's event queue automatically (by informing a value greater than zero
+in the `theDelayWaitKey` parameter of function). In that case, cvui will
+automatically call `cv::waitKey()` within `cvui::update()`, so you don't
+have to worry about it. The value passed to `theDelayWaitKey` will be
+used as the delay for `cv::waitKey()`. values passed to x_position and 
+y_position will be used to decide the postion  of the window.
 
- \param theWindowName name of the window whose UI interactions will be tracked.
- \param theCreateNamedWindow if an OpenCV window named `theWindowName` should be created before it is watched. Windows are created using `cv::namedWindow()`. If this parameter is `false`, ensure you have called `cv::namedWindow(WINDOW_NAME)` to create the window, otherwise cvui will not be able to track its UI interactions.
+\param theWindowName name of the window where the components will be added.
+\param theDelayWaitKey delay value passed to `cv::waitKey()`. If a negative value is informed (default is `-1`), cvui will not automatically call `cv::waitKey()` within `cvui::update()`, which will disable keyboard shortcuts for all components. If you want to enable keyboard shortcut for components (e.g. using & in a button label), you must specify a positive value for this param.
+\param theCreateNamedWindow if an OpenCV window named `theWindowName` should be created during the initialization. Windows are created using `cv::namedWindow()`. If this parameter is `false`, ensure you call `cv::namedWindow(WINDOW_NAME)` *before* initializing cvui, otherwise it will not be able to track UI interactions.
+\param x_position will be the x coordiantes of the starting point of window using cv::moveWindow()
+\param y_position will be the x coordiantes of the starting point of window using cv::moveWindow()
 
- \sa init()
- \sa context()
+\sa watch()
+\sa context()
 */
+
+void init(const cv::String& theWindowName, int x_position, int y_position, int theDelayWaitKey = -1, bool theCreateNamedWindow = true);
+
+/**
+Track UI interactions of a particular window. This function must be invoked
+for any window that will receive cvui components. cvui automatically calls `cvui::watch()`
+for any window informed in `cvui::init()`, so generally you don't have to watch them
+yourself. If you initialized cvui and told it *not* to create windows automatically,
+you need to call `cvui::watch()` on those windows yourself. `cvui::watch()` can
+automatically create a window before watching it, if it does not exist.
+
+\param theWindowName name of the window whose UI interactions will be tracked.
+\param theCreateNamedWindow if an OpenCV window named `theWindowName` should be created before it is watched. Windows are created using `cv::namedWindow()`. If this parameter is `false`, ensure you have called `cv::namedWindow(WINDOW_NAME)` to create the window, otherwise cvui will not be able to track its UI interactions.
+
+\sa init()
+\sa context()
+*/
+
 void watch(const cv::String& theWindowName, bool theCreateNamedWindow = true);
 
 /**
- Inform cvui that all subsequent component calls belong to a window in particular.
- When using cvui with multiple OpenCV windows, you must call cvui component calls
- between `cvui::contex(NAME)` and `cvui::update(NAME)`, where `NAME` is the name of
- the window. That way, cvui knows which window you are using (`NAME` in this case),
- so it can track mouse events, for instance.
+Track UI interactions of a particular window. This function must be invoked
+for any window that will receive cvui components. cvui automatically calls `cvui::watch()`
+for any window informed in `cvui::init()`, so generally you don't have to watch them
+yourself. If you initialized cvui and told it *not* to create windows automatically,
+you need to call `cvui::watch()` on those windows yourself. `cvui::watch()` can
+automatically create a window before watching it, if it does not exist. 
+values passed to x_position and y_position will be used to decide the postion  of the window.
 
- E.g.
+\param theWindowName name of the window whose UI interactions will be tracked.
+\param theCreateNamedWindow if an OpenCV window named `theWindowName` should be created before it is watched. Windows are created using `cv::namedWindow()`. If this parameter is `false`, ensure you have called `cv::namedWindow(WINDOW_NAME)` to create the window, otherwise cvui will not be able to track its UI interactions.
+\param x_position will be the x coordiantes of the starting point of window using cv::moveWindow()
+\param y_position will be the x coordiantes of the starting point of window using cv::moveWindow()
 
- ```
- // Code for window "window1".
- cvui::context("window1");
- cviu::text(frame, ...);
- cviu::button(frame, ...);
- cviu::update("window1");
-
-
- // somewhere else, code for "window2"
- cvui::context("window2");
- cviu::printf(frame, ...);
- cviu::printf(frame, ...);
- cviu::update("window2");
-
- // Show everything in a window
- cv::imshow(frame);
- ```
-
- Pay attention to the pair `cvui::context(NAME)` and `cviu::update(NAME)`, which
- encloses the component calls for that window. You need such pair for each window
- of your application.
-
- After calling `cvui::update()`, you can show the result in a window using `cv::imshow()`.
- If you want to save some typing, you can use `cvui::imshow()`, which calls `cvui::update()`
- for you and then shows the frame in a window.
-
- E.g.:
-
- ```
- // Code for window "window1".
- cvui::context("window1");
- cviu::text(frame, ...);
- cviu::button(frame, ...);
- cviu::imshow("window1");
-
- // somewhere else, code for "window2"
- cvui::context("window2");
- cviu::printf(frame, ...);
- cviu::printf(frame, ...);
- cviu::imshow("window2");
- ```
-
- In that case, you don't have to bother calling `cvui::update()` yourself, since
- `cvui::imshow()` will do it for you.
-
- \param theWindowName name of the window that will receive components from all subsequent cvui calls.
-
- \sa init()
- \sa watch()
+\sa init()
+\sa context()
 */
+
+void watch(const cv::String& theWindowName, int x_position, int y_position, bool theCreateNamedWindow =true);
+
+/**
+Inform cvui that all subsequent component calls belong to a window in particular.
+When using cvui with multiple OpenCV windows, you must call cvui component calls
+between `cvui::contex(NAME)` and `cvui::update(NAME)`, where `NAME` is the name of
+the window. That way, cvui knows which window you are using (`NAME` in this case),
+so it can track mouse events, for instance.
+
+E.g.
+
+```
+// Code for window "window1".
+cvui::context("window1");
+cviu::text(frame, ...);
+cviu::button(frame, ...);
+cviu::update("window1");
+
+
+// somewhere else, code for "window2"
+cvui::context("window2");
+cviu::printf(frame, ...);
+cviu::printf(frame, ...);
+cviu::update("window2");
+
+// Show everything in a window
+cv::imshow(frame);
+```
+
+Pay attention to the pair `cvui::context(NAME)` and `cviu::update(NAME)`, which
+encloses the component calls for that window. You need such pair for each window
+of your application.
+
+After calling `cvui::update()`, you can show the result in a window using `cv::imshow()`.
+If you want to save some typing, you can use `cvui::imshow()`, which calls `cvui::update()`
+for you and then shows the frame in a window.
+
+E.g.:
+
+```
+// Code for window "window1".
+cvui::context("window1");
+cviu::text(frame, ...);
+cviu::button(frame, ...);
+cviu::imshow("window1");
+
+// somewhere else, code for "window2"
+cvui::context("window2");
+cviu::printf(frame, ...);
+cviu::printf(frame, ...);
+cviu::imshow("window2");
+```
+
+In that case, you don't have to bother calling `cvui::update()` yourself, since
+`cvui::imshow()` will do it for you.
+
+\param theWindowName name of the window that will receive components from all subsequent cvui calls.
+
+\sa init()
+\sa watch()
+*/
+
+
 void context(const cv::String& theWindowName);
 
 /**
@@ -2087,6 +2132,11 @@ void init(const cv::String& theWindowName, int theDelayWaitKey, bool theCreateNa
 	watch(theWindowName, theCreateNamedWindow);
 }
 
+void init(const cv::String& theWindowName, int x_position, int y_position, int theDelayWaitKey, bool theCreateNamedWindow) {
+	internal::init(theWindowName, theDelayWaitKey);
+	watch(theWindowName, x_position, y_position, theCreateNamedWindow);
+}
+
 void init(const cv::String theWindowNames[], size_t theHowManyWindows, int theDelayWaitKey, bool theCreateNamedWindows) {
 	internal::init(theWindowNames[0], theDelayWaitKey);
 
@@ -2106,6 +2156,27 @@ void watch(const cv::String& theWindowName, bool theCreateNamedWindow) {
 	aContex.mouse.position.x = 0;
 	aContex.mouse.position.y = 0;
 	
+	internal::resetMouseButton(aContex.mouse.anyButton);
+	internal::resetMouseButton(aContex.mouse.buttons[RIGHT_BUTTON]);
+	internal::resetMouseButton(aContex.mouse.buttons[MIDDLE_BUTTON]);
+	internal::resetMouseButton(aContex.mouse.buttons[LEFT_BUTTON]);
+
+	internal::gContexts[theWindowName] = aContex;
+	cv::setMouseCallback(theWindowName, handleMouse, &internal::gContexts[theWindowName]);
+}
+
+void watch(const cv::String& theWindowName, int x_position, int y_position, bool theCreateNamedWindow) {
+	cvui_context_t aContex;
+
+	if (theCreateNamedWindow) {
+		cv::namedWindow(theWindowName);
+		cv::moveWindow(theWindowName, x_position, y_position);
+	}
+
+	aContex.windowName = theWindowName;
+	aContex.mouse.position.x = 0;
+	aContex.mouse.position.y = 0;
+
 	internal::resetMouseButton(aContex.mouse.anyButton);
 	internal::resetMouseButton(aContex.mouse.buttons[RIGHT_BUTTON]);
 	internal::resetMouseButton(aContex.mouse.buttons[MIDDLE_BUTTON]);

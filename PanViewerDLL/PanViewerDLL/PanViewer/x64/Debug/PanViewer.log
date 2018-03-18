@@ -1,4 +1,4 @@
-﻿Build started 3/18/2018 9:23:30 AM.
+﻿Build started 3/18/2018 9:43:35 PM.
      1>Project "D:\Projects\SmartPanViewer\PanViewerDLL\PanViewerDLL\PanViewer\PanViewer.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\install\include /IC:\opencv\build\install\include\opencv /IC:\opencv\build\install\include\opencv2 /I"C:\Program Files\boost\boost_1_66_0" /ZI /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _WINDOWS /D _USRDLL /D PANVIEWER_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Yc /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
@@ -34,4 +34,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:30.31
+Time Elapsed 00:00:37.70

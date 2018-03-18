@@ -3,6 +3,8 @@
 class panViewerUI
 {
 public:
+	panViewerUI();
+
 	panViewerUI(int left, int middle, int right, int width, int height);
 
 	void openCameraOutput();

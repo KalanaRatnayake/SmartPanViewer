@@ -21,7 +21,7 @@ panViewerUI::panViewerUI(int left, int middle, int right, int width, int height)
 }
 
 void panViewerUI::stitchedOutput() {
-	cvui::init(WINDOW1_NAME);
+	cvui::init(WINDOW1_NAME, 0, 0);
 	cv::Mat frame = cv::Mat(cv::Size((WindowWidth + 10), (WindowHeight + 10)), CV_8UC3);
 
 	while (true) {
@@ -37,7 +37,7 @@ void panViewerUI::stitchedOutput() {
 }
 
 void panViewerUI::openCameraOutput() {
-	cvui::init(WINDOW2_NAME);
+	cvui::init(WINDOW2_NAME, 0, 0);
 
 	cv::Mat frame = cv::Mat(cv::Size((WindowWidth+20), (WindowHeight+10)), CV_8UC3);
 
