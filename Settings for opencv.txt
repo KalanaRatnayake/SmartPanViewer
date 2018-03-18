@@ -4,7 +4,7 @@ You can add a path by clicking on Folder icon left to Red Cross Icon. You have t
 C:\opencv\build\install\include 
 C:\opencv\build\install\include\opencv 
 C:\opencv\build\install\include\opencv2
-C:\Program Files\boost\boost_1_66_0\boost
+C:\Program Files\boost\boost_1_66_0
 
 2. Now we will add path to library directories. 
 Click on Linker in left panel, then Additional Library Directories.
