@@ -36,9 +36,6 @@
     <ClInclude Include="middle_frame_queue.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="PanViewer.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="panViewerCore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -49,6 +46,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="stitched_frame_queue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PanViewer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

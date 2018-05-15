@@ -1,7 +1,7 @@
 // PanViewer.cpp : Defines the exported functions for the DLL application.
 //
 
-#include "PanViewer.h"
+#include <stdio.h>
 #include "panViewerUI.h"
 
 panViewerUI pvui;
