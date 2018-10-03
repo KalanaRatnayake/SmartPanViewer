@@ -90,7 +90,7 @@ def drawMatches(imageA, imageB, kpsA, kpsB, matches, status):
 
 # ==============================================================================
 
-def stitch(imageA, imageB, ratio=0.75, reprojThresh=4.0, showMatches=False):
+def stitch(imageA, imageB, ratio=1, reprojThresh=4.0, showMatches=False):
     # detect and extract keypoints and descriptors
     (kpsA, featuresA) = detectAndDescribe(imageA)
     (kpsB, featuresB) = detectAndDescribe(imageB)

@@ -1,0 +1,16 @@
+﻿Build started 7/9/2018 12:11:41 PM.
+     1>Project "D:\Projects\SmartPanViewer\PanViewer\PanViewer\PanViewer.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\opencv\build\install\include\opencv /IC:\opencv\build\install\include\opencv2 /I"C:\Program Files\boost\boost_1_66_0" /IC:\opencv\build\install\include /IC:\wxWidgets\include\msvc /IC:\wxWidgets\include /ZI /nologo /W3 /WX- /Od /D _DEBUG /D _WINDOWS /D WIN32 /D WINVER=0x0400 /D __WXMSW__ /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp panViewerUi.cpp
+         panViewerUi.cpp
+     1>d:\projects\smartpanviewer\panviewer\panviewer\panviewerui.h(68): error C2182: 'DisplayCameras': illegal use of type 'void'
+     1>d:\projects\smartpanviewer\panviewer\panviewer\panviewerui.cpp(131): error C3867: 'FrameInitial::DisplayCameras': non-standard syntax; use '&' to create a pointer to member
+     1>d:\projects\smartpanviewer\panviewer\panviewer\panviewerui.cpp(134): error C2182: 'DisplayCameras': illegal use of type 'void'
+         main.cpp
+     1>d:\projects\smartpanviewer\panviewer\panviewer\panviewerui.h(68): error C2182: 'DisplayCameras': illegal use of type 'void'
+         Generating Code...
+     1>Done Building Project "D:\Projects\SmartPanViewer\PanViewer\PanViewer\PanViewer.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:16.57
