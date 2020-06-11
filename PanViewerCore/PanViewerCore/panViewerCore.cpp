@@ -12,10 +12,10 @@ bool middleThreadRun;
 bool rightThreadRun;
 bool stitchedThreadRun;
 
-left_frame_queue leftQueue = left_frame_queue(20);
-middle_frame_queue middleQueue = middle_frame_queue(20);
-right_frame_queue rightQueue = right_frame_queue(20);
-stitched_frame_queue stitchQueue = stitched_frame_queue(20);
+left_frame_queue leftQueue = left_frame_queue(10);
+middle_frame_queue middleQueue = middle_frame_queue(10);
+right_frame_queue rightQueue = right_frame_queue(10);
+stitched_frame_queue stitchQueue = stitched_frame_queue(10);
 
 boost::thread leftfeed;
 boost::thread middlefeed;
@@ -99,9 +99,9 @@ void feedToStitch(left_frame_queue leftQueue, middle_frame_queue middleQueue, ri
 			rightQueue.right_wait_and_pop(right);
 
 			stitcher.gpuStitch(left, middle, right, image);
-
 			stitchQueue.pushstitched(image);
 		}
+		wait(70);
 	}
 	catch (cv::Exception& e) {
 		cv::Mat left2, middle2, right2;

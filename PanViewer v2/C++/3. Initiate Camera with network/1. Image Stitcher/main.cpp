@@ -6,6 +6,8 @@
 
 void viewCamera(std::string address, std::string windowName) {
 	cv::VideoCapture cap;
+	cap.set(CV_CAP_PROP_FRAME_WIDTH, 816);
+	cap.set(CV_CAP_PROP_FRAME_HEIGHT, 612);
 	cv::Mat frame;
 
 	while (true)
@@ -29,16 +31,16 @@ void viewCamera(std::string address, std::string windowName) {
 }
 
 int main() {
-	const std::string videoStreamAddress1 = "http://ID:PASSWORD@IPADDRESS:PORTNO/mjpeg.cgi?user=ID&password=ID:PASSWORD&channel=0&.mjpg";
-	const std::string videoStreamAddress2 = "http://ID:PASSWORD@IPADDRESS:PORTNO/mjpeg.cgi?user=ID&password=ID:PASSWORD&channel=0&.mjpg";
-	const std::string videoStreamAddress3 = "http://ID:PASSWORD@IPADDRESS:PORTNO/mjpeg.cgi?user=ID&password=ID:PASSWORD&channel=0&.mjpg";
+	const std::string videoStreamAddress1 = "rtsp://admin:123456zxc@192.168.1.62:554/Streaming/Channels/101/";
+	const std::string videoStreamAddress2 = "rtsp://admin:123456zxc@192.168.1.63:554/Streaming/Channels/101/";
+	const std::string videoStreamAddress3 = "rtsp://admin:123456zxc@192.168.1.64:554/Streaming/Channels/101/";
 
 
-	std::thread cam1(viewCamera, videoStreamAddress1, "Camera 1");
+	std::thread cam1(viewCamera, videoStreamAddress1, "Camera 1.jpg");
 	Sleep(500);
-	std::thread cam2(viewCamera, videoStreamAddress2, "Camera 2");
+	std::thread cam2(viewCamera, videoStreamAddress2, "Camera 2.jpg");
 	Sleep(500);
-	std::thread cam3(viewCamera, videoStreamAddress3, "Camera 3");
+	std::thread cam3(viewCamera, videoStreamAddress3, "Camera 3.jpg");
 	Sleep(500);
 
 	cam1.join();
